@@ -90,7 +90,7 @@ docker-stop:
 	-docker stop api-node
 	-docker stop api-golang
 	-docker stop client-react-vite
-	-docker stop client-react-nginx
+	#-docker stop client-react-nginx
 
 .PHONY: docker-rm
 docker-rm:
@@ -98,7 +98,7 @@ docker-rm:
 	-docker container rm api-node
 	-docker container rm api-golang
 	-docker container rm client-react-vite
-	-docker container rm client-react-nginx
+	#-docker container rm client-react-nginx
 	-docker network rm my-network
 
 define DOCKER_COMPOSE_NOTE
